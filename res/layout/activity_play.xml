@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<ImageView
+        android:id="@+id/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+    
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/learn_background" />
+
+    	<RelativeLayout
+        android:id="@+id/dropLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentLeft="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_alignBottom="@+id/background"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp" >
+
+        <ImageView
+            android:id="@+id/oneCentavoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/twentyFiveCentavoView"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/onecentavo" />
+
+        <ImageView
+            android:id="@+id/tenCentavoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/fiveCentavoView"
+            android:src="@drawable/tencentavos" />
+
+        <ImageView
+            android:id="@+id/fiveCentavoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/oneCentavoView"
+            android:layout_toRightOf="@+id/oneCentavoView"
+            android:src="@drawable/fivecentavos" />
+
+        <ImageView
+            android:id="@+id/twentyFiveCentavoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fivePesoView"
+            android:layout_alignTop="@+id/pisoView"
+            android:src="@drawable/twentyfivecentavos" />
+
+        <ImageView
+            android:id="@+id/pisoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tenPesoView"
+            android:layout_below="@+id/tenCentavoView"
+            android:src="@drawable/piso" />
+
+        <ImageView
+            android:id="@+id/fivePesoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pisoView"
+            android:layout_toLeftOf="@+id/tenPesoView"
+            android:src="@drawable/limangpiso" />
+
+        <ImageView
+            android:id="@+id/tenPesoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fivePesoView"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sampungpiso" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/luna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/background"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/luna" />
+
+    <TextView
+        android:id="@+id/totalAmountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/label_total"
+        android:textColor="#FF0000"
+        android:textSize="30px" />
+</RelativeLayout>
